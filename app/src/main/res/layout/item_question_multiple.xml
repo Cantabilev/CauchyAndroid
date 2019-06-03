@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:id="@+id/tvQuestionTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textColor="@color/black2"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:text="题目"/>
+
+    <CheckBox
+        android:id="@+id/optionA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvQuestionTitle"
+        android:text="optinA"/>
+
+    <CheckBox
+        android:id="@+id/optionB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/optionA"/>
+
+    <CheckBox
+        android:id="@+id/optionC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/optionB"/>
+
+    <CheckBox
+        android:id="@+id/optionD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/optionC"/>
+
+    <LinearLayout
+        android:id="@+id/llTips"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/optionD"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:visibility="gone"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="我的答案："/>
+        <TextView
+            android:id="@+id/tvMyAnswer"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:gravity="left"
+            android:text="ABCD"
+            android:textColor="@color/colorPrimary"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="正确答案：" />
+        <TextView
+            android:id="@+id/tvCorrectAnswer"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:gravity="left"
+            android:text="False"
+            android:textColor="@color/colorPrimary"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="得分："/>
+        <TextView
+            android:id="@+id/tvScore"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:gravity="left"
+            android:text="999"
+            android:textColor="@color/colorPrimary"/>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

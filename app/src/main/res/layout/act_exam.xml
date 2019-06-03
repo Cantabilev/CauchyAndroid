@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.exam.ExamAct">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="考试Title"
+        android:gravity="center"
+        android:textSize="15sp"
+        android:padding="12dp"
+        android:textColor="@color/black"/>
+    <TextView
+        android:id="@+id/tvSubtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+        android:text="考试Subtitle"
+        android:gravity="center"
+        android:textSize="12sp"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tvSubtitle"
+        android:padding="20dp"/>
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Cauchy</string>
+    <string name="title_course">课程</string>
+    <string name="title_study">学习</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_account">账户</string>
+    <string name="title_activity_login">Sign in</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+
+    <string name="cancel">取消</string>
+    <string name="submit">确定</string>
+
+
+    <string name="info">本课程主要从考研英语图画作文的出题形式、写作要领、写作步骤、篇章结构和模板来帮助大家逐一破解。帮助考生根据话题性质灵活使用，能够更轻松的写好图画作文，以实现最后完美一跃。</string>
+    <string name="validate">根据课程有效生效期算，期限内无线学习，过期后需要重新报名</string>
+    <string name="suitable">
+        1.基础薄弱，考前抱佛脚的学生\n2.屡考不过，对六级丧失信心的同学\n3.想在短期内备考，一次过级的 同学
+    </string>
+    <string name="target">掌握精准考词，考过六级</string>
+
+    <!-- Time -->
+    <string name="just_now">刚刚</string>
+    <string name="min">分钟前</string>
+    <string name="hour">小时前</string>
+    <string name="day">天前</string>
+    <string name="month">月前</string>
+    <string name="year">年前</string>
+    <string name="today">今天</string>
+    <string name="yesterday">昨天</string>
+    <string name="the_day_before_yesterday">前天</string>
+</resources>

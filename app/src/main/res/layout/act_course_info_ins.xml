@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#bbffffff"
+    tools:context=".activity.course.CourseInfoInsAct">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="第三讲-杨辉三角"
+        android:gravity="center"
+        android:textColor="#000"
+        android:textSize="15sp"
+        android:padding="12dp"/>
+
+    <TextView
+        android:id="@+id/tvAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+        android:paddingLeft="20dp"
+        android:text="东城区长安街100号"/>
+
+    <TextView
+        android:id="@+id/tvTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvAddress"
+        android:paddingLeft="20dp"
+        android:text="2019-02-02 10:00 - 2019-02-02 12:00"/>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabCourse"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        app:layout_constraintTop_toBottomOf="@+id/tvTime"
+        android:layout_marginTop="10dp"
+        android:background="#bbffffff"
+        app:tabIndicatorColor="#bbffffff"
+        app:tabSelectedTextColor="@color/colorPrimary"
+        app:tabTextColor="@color/black">
+
+        <android.support.design.widget.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="预习"/>
+        <android.support.design.widget.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="复习"/>
+        <android.support.design.widget.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="讨论"/>
+
+    </android.support.design.widget.TabLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#bbffffff"
+        app:layout_constraintTop_toBottomOf="@+id/tabCourse"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+</android.support.constraint.ConstraintLayout>

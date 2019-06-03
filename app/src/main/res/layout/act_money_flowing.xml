@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.user.MoneyFlowingAct">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="资金流水"
+        android:gravity="center"
+        android:textSize="15sp"
+        android:padding="12dp"/>
+
+    <LinearLayout
+        android:id="@+id/llSummary"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:background="#fff">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tvLabelCash"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="现金"
+                android:gravity="center"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <TextView
+                android:id="@+id/tvCash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="30sp"
+                android:textColor="#4CAF50"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.4"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvLabelCash" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="元"
+                android:textColor="#2c2c2c"
+                android:layout_marginBottom="7dp"
+                app:layout_constraintLeft_toRightOf="@+id/tvCash"
+                app:layout_constraintBottom_toBottomOf="@+id/tvCash" />
+
+        </android.support.constraint.ConstraintLayout>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:background="#000000"/>
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tvLabelTotal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="赠送金额"
+                android:gravity="center"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <TextView
+                android:id="@+id/tvFree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="30sp"
+                android:textColor="#4CAF50"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.4"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvLabelTotal" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#2c2c2c"
+                android:layout_marginBottom="7dp"
+                app:layout_constraintLeft_toRightOf="@+id/tvTotal"
+                app:layout_constraintBottom_toBottomOf="@+id/tvTotal" />
+
+        </android.support.constraint.ConstraintLayout>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerMoney"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/llSummary"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"/>
+
+</android.support.constraint.ConstraintLayout>
